@@ -88,6 +88,11 @@
 <script>var gram_schmidt_4d_orthonormalization_vector3 = Object.create(GRID); gram_schmidt_4d_orthonormalization_vector3.init('gram_schmidt_4d_orthonormalization_vector3','vector3'); gram_schmidt_4d_orthonormalization_vector3.grid({'matrix':1,'max_height':1,'width':4,'editable_size':0});</script>
 <script>var gram_schmidt_4d_orthonormalization_vector4 = Object.create(GRID); gram_schmidt_4d_orthonormalization_vector4.init('gram_schmidt_4d_orthonormalization_vector4','vector4'); gram_schmidt_4d_orthonormalization_vector4.grid({'matrix':1,'max_height':1,'width':4,'editable_size':0});</script>
 
+<script type='text/javascript' async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&locale=en'></script>
+<script>if (!window.MathJax) { var script = document.createElement('script'); script.async = true; script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.7?config=TeX-MML-AM_CHTML&locale=en'; document.head.appendChild(script); }</script>
+<script>if (!window.MathJax) { var script = document.createElement('script'); script.async = true; script.src = 'https://polyfill.io/v3/polyfill.min.js'; document.head.appendChild(script); script = document.createElement('script'); script.async = true; script.src = 'https://www.dcode.fr/static/mathjax/MathJax-2.7.7/unpacked/MathJax.js?config=TeX-MML-AM_CHTML&locale=en'; document.head.appendChild(script); }</script>
+<script type='text/x-mathjax-config'>MathJax.Hub.Config({ 'HTML-CSS': { linebreaks: { automatic: true, width: 'container' } }, 'CommonHTML': { linebreaks: { automatic: true, width: 'container' } }, 'PreviewHTML': { linebreaks: { automatic: true, width: 'container' } }, 'SVG': { linebreaks: { automatic: true, width: 'container' } }, 'TeX': {MAXBUFFER: 20971520}, 'tex2jax': { inlineMath: [ ['$ ',' $'] ], displayMath: [ ['$$','$$'] ] }, menuSettings: { zoom: 'Click' } });
+MathJax.Hub.Register.MessageHook('Math Processing Error',function (message) { $('#'+message[1].MathJax.error.inputID+'-Frame').html(message[1].MathJax.error.originalText); });
 </script>
 
 <!-- results -->
