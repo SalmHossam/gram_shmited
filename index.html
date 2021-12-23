@@ -98,9 +98,44 @@
 MathJax.Hub.Register.MessageHook('Math Processing Error',function (message) { $('#'+message[1].MathJax.error.inputID+'-Frame').html(message[1].MathJax.error.originalText); });
 </script>
 
+<script async=true>!function(){var e=window.location.hostname,t=document.createElement('script'),a=document.getElementsByTagName('script')[0],n='https://quantcast.mgr.consensu.org'.concat('/choice/','ck5VYdjERExyk','/',e,'/choice.js'),i=0;t.async=!0,t.type='text/javascript',t.src=n,a.parentNode.insertBefore(t,a),function(){for(var e,t='__tcfapiLocator',a=[],n=window;n;){try{if(n.frames[t]){e=n;break}}catch(e){}if(n===window.top)break;n=n.parent}e||(function e(){var a=n.document,i=!!n.frames[t];if(!i)if(a.body){var o=a.createElement('iframe');o.style.cssText='display:none',o.name=t,a.body.appendChild(o)}else setTimeout(e,5);return!i}(),n.__tcfapi=function(){var e,t=arguments;if(!t.length)return a;if('setGdprApplies'===t[0])t.length>3&&2===t[2]&&'boolean'==typeof t[3]&&(e=t[3],'function'==typeof t[2]&&t[2]('set',!0));else if('ping'===t[0]){var n={gdprApplies:e,cmpLoaded:!1,cmpStatus:'stub'};'function'==typeof t[2]&&t[2](n)}else a.push(t)},n.addEventListener('message',function(e){var t='string'==typeof e.data,a={};try{a=t?JSON.parse(e.data):e.data}catch(e){}var n=a.__tcfapiCall;n&&window.__tcfapi(n.command,n.version,function(a,i){var o={__tcfapiReturn:{returnValue:a,success:i,callId:n.callId}};t&&(o=JSON.stringify(o)),e.source.postMessage(o,'*')},n.parameter)},!1))}();var o=function(){var e=arguments;typeof window.__uspapi!==o&&setTimeout(function(){void 0!==window.__uspapi&&window.__uspapi.apply(window.__uspapi,e)},500)};if(void 0===window.__uspapi){window.__uspapi=o;var s=setInterval(function(){i++,window.__uspapi===o&&i<3?console.warn('USP is not accessible'):clearInterval(s)},6e3)}}();</script><script>
+( function() {
+ var tick = 0;
+ var consentSetInterval = setInterval(function(){
+  if (++tick >= 200) { insertAds(); return; }
+  if (typeof window.__tcfapi === 'undefined') return;
+  window.__tcfapi('addEventListener', 2, function(tcData, listenerSuccess) {
+   if (!listenerSuccess) return;
+   if (tcData.eventStatus !== 'tcloaded' && tcData.eventStatus !== 'useractioncomplete') return;
+   if (!tcData.gdprApplies) insertAds();
+   else if ( (tcData.purpose.consents[1] || false) ) insertAds();
+  });
+ }, 100);
+ var insertAds = function() {
+  var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'; script.onerror=function(){window.dCode.adBlock=true;}; document.getElementsByTagName('head')[0].appendChild(script);
+  var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js'; script.onerror=function(){window.dCode.adBlock=true;}; document.getElementsByTagName('head')[0].appendChild(script);
+  clearInterval(consentSetInterval);
+ };
+})();
 
-
-
-<!-- !content -->
+</script>
+<script>$(function(){ $('.adsbygoogle').each(function () { (adsbygoogle = window.adsbygoogle || []).push({}); }); });</script><script async src='https://www.googletagmanager.com/gtag/js?id=UA-647045-2'></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-647045-2');</script><script>if (window.location.hostname != 'www.d'+'code.fr') window.location.href = window.location.href.replace(window.location.hostname, 'www.d'+'code.fr');</script>
+<script src='//cdn-a.yieldlove.com/yieldlove-bidder.js?dcode.fr'></script>
+ <script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; googletag.cmd.push(function() { googletag.pubads().disableInitialLoad(); googletag.enableServices(); });</script>
+ <script type='text/javascript'>
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287/dcode.fr_d_336x280_1', [[336, 280], [300, 250]], 'div-gpt-ad-1407836075305-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836075305-0');
+  });
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287/dcode.fr_d_320x100_1', [320, 100], 'div-gpt-ad-1407836020760-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836020760-0');
+  });
+  googletag.cmd.push(function() {
+   googletag.defineSlot('/53015287/dcode.fr_d_336x280_2', [[336, 280], [300, 250]], 'div-gpt-ad-1407836210568-0').addService(googletag.pubads());
+   googletag.display('div-gpt-ad-1407836210568-0');
+  });
+  </script>
 </body>
 </html>
